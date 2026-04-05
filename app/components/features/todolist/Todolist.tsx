@@ -3,7 +3,7 @@ import Thread from "./Thread";
 
 export default function Todolist() {
     return (
-        <section className="w-full pt-32">
+        <section className="w-full pt-32 pb-120">
             <div className="flex justify-between">
                 <h1 className="font-primary-white text-5xl">
                     Make product <br /> operations self-driving
