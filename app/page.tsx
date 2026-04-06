@@ -5,14 +5,14 @@ import Todolist from "./components/features/todolist/Todolist";
 
 export default function Home() {
     return (
-        <div className="font-medium">
+        <>
             <Navbar />
-            <div className="min-mx-[20vh] mx-auto mt-70 flex max-w-359 flex-col items-center overflow-scroll px-11.5 tracking-tighter">
+            <div className="min-mx-[20vh] mx-auto mt-70 flex max-w-359 flex-col items-center px-11.5">
                 <Showcase />
                 <Figures />
                 <Todolist />
             </div>
-        </div>
+        </>
     );
 }
 

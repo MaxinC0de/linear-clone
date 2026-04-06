@@ -12,7 +12,7 @@ const LABELS = [
 
 export default function Navbar() {
     return (
-        <header className="bg-primary-black fixed top-0 z-50 mx-auto flex h-19 w-full items-center justify-center border-b border-white/10 px-19">
+        <header className="border-thin bg-main fixed top-0 z-50 mx-auto flex h-19 w-full items-center justify-center border-b px-19">
             <nav className="w-full max-w-320.25 font-medium">
                 <ul className="flex items-center justify-between gap-4 text-[13px]">
                     <li>
@@ -36,7 +36,7 @@ export default function Navbar() {
                                 return (
                                     <>
                                         <Link
-                                            className={`text-primary-grey/85 hover:text-primary-white hover:bg-secondary-grey/10 flex h-8 items-center justify-center rounded px-3 text-[13px] leading-5 transition-all duration-150`}
+                                            className="flex h-8 items-center justify-center rounded px-3 text-[13px] leading-5 transition-all duration-150"
                                             href={`/${label}`}
                                         >
                                             {label}
@@ -45,12 +45,12 @@ export default function Navbar() {
                                 );
                             })}
                         </div>
-                        <div className="m-2 h-4 w-px bg-white/8"></div>
+                        <div className="border-thin m-2 h-4 w-px"></div>
                         <div className="flex">
-                            <button className="text-primary-grey/85 hover:text-primary-white hover:bg-secondary-grey/10 flex h-8 cursor-pointer items-center justify-center rounded px-3 text-[13px] leading-5 transition-all duration-150">
+                            <button className="flex h-8 cursor-pointer items-center justify-center rounded px-3 text-[13px] leading-5 transition-all duration-150">
                                 Log in
                             </button>
-                            <button className="text-primary-black bg-primary-white/90 ml-1 flex h-8 cursor-pointer items-center justify-center rounded px-3 text-[13px] leading-5 transition-all duration-150 hover:bg-white">
+                            <button className="ml-1 flex h-8 cursor-pointer items-center justify-center rounded px-3 text-[13px] leading-5 transition-all duration-150 hover:bg-white">
                                 Sign up
                             </button>
                         </div>
