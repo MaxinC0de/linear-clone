@@ -14,12 +14,12 @@ body {
 @theme {
     --color-primary: #f7f8f8;
     --color-secondary: #d0d6e0;
-    --color-tertiary: #8a8f98d9;
+    --color-tertiary: #8a8f98;
     --color-quaternary: #d1d1d1;
     --color-main: #08090a;
-    --color-thin: #ffffff0d;
-
+    --color-thin: #ffffff1a;
     --color-hovered: #1b1b1b;
+    --color-view: #121314;
 }
 
 .font-inter {

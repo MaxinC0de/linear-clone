@@ -1,8 +1,8 @@
 export default function SideHeader() {
     return (
-        <header className="flex items-center justify-between border-b p-4">
+        <header className="bg-view flex items-center justify-between p-4 text-xs">
             <div className="flex items-center gap-2">
-                <p className="font-semibold">Inbox</p>
+                <p className="text-secondary font-semibold">Inbox</p>
             </div>
             <div className="flex items-center gap-2"></div>
         </header>

@@ -1,25 +1,15 @@
-import Link from "next/link";
+import HeroFeatures from "../HeroFeatures";
+import Tasks from "./Tasks";
 import Thread from "./Thread";
 
 export default function Todolist() {
     return (
-        <section className="w-full pt-32 pb-120">
-            <div className="flex justify-between">
-                <h1 className="text-5xl">
-                    Make product <br /> operations self-driving
-                </h1>
-                <div>
-                    <p className="text-2xl">
-                        Turn conversations and customer feedback <br /> into
-                        actionable issues that are routed <br />, labeled, and
-                        prioritized for the right team.
-                    </p>
-                    <Link href={"/"}>
-                        <span className="jetbrains">1.0</span> Intake
-                    </Link>
-                </div>
+        <div className="pt-120">
+            <HeroFeatures feature={"todolist"} />
+            <div className="relative">
+                <Thread />
+                <Tasks />
             </div>
-            <Thread />
-        </section>
+        </div>
     );
 }
